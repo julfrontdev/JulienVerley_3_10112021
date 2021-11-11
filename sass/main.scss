@@ -1,1 +1,19 @@
+// Attention à l'ordre d'importation des partiels, qui correspond à l'ordre dans lequel Sass compile
+// Attention, main.scss ne contient que des imports
+// non utilisés : les partiels @import "./utils/functions", @import "./utils/extensions" et @import "./pages/project";
+
 @import "./utils/variables";
+@import "./utils/mixins";
+
+@import "./base/base";
+@import "./base/typography"; 
+
+@import "./components/buttons"; 
+
+@import "./layouts/header";
+@import "./layouts/nav"; 
+@import "./layouts/container";
+@import "./layouts/form";
+
+@import "./pages/accueil"; // pages/ contient des règles spécifiques à une seule page, ici l'Accueil ; mieux @import "./pages/work"; ?
+@import "./pages/about";
