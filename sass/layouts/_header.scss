@@ -1,5 +1,13 @@
 
-.logo {
-    @include flex-center;
-    
+// Header 
+
+header {
+    @include flex-center;    
+    @include flex-column;     
+    padding: 2%;
+    .header__logo {
+        img {
+            height: 27px; 
+        }
+    }
 }

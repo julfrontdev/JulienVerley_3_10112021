@@ -1,0 +1,18 @@
+// Navigation Nav
+
+nav {
+    background-color: $bg-search;
+    width: 100%;
+    padding: 3% 0;
+    box-shadow: 0px -2px 2px lightgrey;   
+    .nav__search {
+        @include flex-row; 
+        @include flex-center; 
+        .nav__search__map-icon {
+            margin-left: -5%;
+        }
+        .nav__search__text {
+            padding-left: 5%;
+        }
+    }
+}    

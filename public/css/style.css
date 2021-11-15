@@ -8,10 +8,54 @@ body {
   font-family: "Shrikhand", cursive;
 }
 
-.logo {
+header {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+header .header__logo img {
+  height: 27px;
+}
+
+nav {
+  background-color: #f6f6f6;
+  width: 100%;
+  padding: 3% 0;
+  box-shadow: 0px -2px 2px lightgrey;
+}
+nav .nav__search {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .nav__search .nav__search__map-icon {
+  margin-left: -5%;
+}
+nav .nav__search .nav__search__text {
+  padding-left: 5%;
+}
+
+.presentation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.explorer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 10%;
 }
 
 /*# sourceMappingURL=style.css.map */

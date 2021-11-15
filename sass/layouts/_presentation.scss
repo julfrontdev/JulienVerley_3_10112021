@@ -1,0 +1,22 @@
+// Presentation 
+
+.presentation {
+    @include flex-center;
+    @include flex-column;
+}
+
+// Explorer 
+
+.explorer {
+    @include flex-center;
+    @include flex-column;
+    text-align: center;
+    padding: 0 10%;
+        
+}
+
+// Functioning
+
+.functioning {
+    
+}
