@@ -1,12 +1,17 @@
-@font-face {
-  /* .................................. */
-  font-family: "Shrikhand", cursive;
-  font-style: normal;
-}
-@font-face {
-  /* .................................. */
+@import url(https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
+body {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
+}
+
+.menu-title {
+  font-family: "Shrikhand", cursive;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

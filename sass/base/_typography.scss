@@ -1,14 +1,16 @@
-// A revoir 
+// Google Fonts
 
-// A revoir 
-@font-face { /* .................................. */
-    font-family: 'Shrikhand', cursive;    
-    font-style: normal;
+@import url(https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
+
+
+// Fonts
+
+body {
+    font-family: $roboto;
 }
 
-// A revoir 
-@font-face { /* .................................. */
-    font-family: 'Roboto', sans-serif;    
-    font-style: normal;
-}
+.menu-title {
+    font-family: $Shrikhand; 
+    }  
 
