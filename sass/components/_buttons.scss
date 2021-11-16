@@ -1,0 +1,24 @@
+// Buttons
+
+.btn {
+    @include flex(center, column); 
+    color: white; 
+    height: 40px;
+    width: 75%;
+    border-radius: 25px;
+    color: solid white;
+    background-color: $color-primary;
+    background-image:
+        linear-gradient(
+        to top left, 
+        $color-primary, $color-secondary
+        );
+    &:hover{
+        background-image:
+            linear-gradient(
+            to top left, 
+            $color-primary-lighter, $color-secondary-lighter
+            );
+    }
+    
+}

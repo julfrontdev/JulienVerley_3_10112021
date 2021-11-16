@@ -6,8 +6,12 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA; 
 $color-tertiary: #99E2D0; 
 
+$color-primary-lighter: lighten($color-primary, 7%);
+$color-secondary-lighter: lighten($color-secondary, 7%);
+
 // Back-ground colors 
 $bg-search: #f6f6f6; 
+
 
 // Font Variables
 $roboto: 'Roboto', sans-serif;  

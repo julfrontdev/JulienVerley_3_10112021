@@ -3,18 +3,9 @@
 
 // Flexbox mixins
 
-@mixin flex-center {
+@mixin flex($center, $direction) {
     display: flex;
-    align-items: center;
-    justify-content: center; 
-}
-
-@mixin flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-@mixin flex-row {
-    display: flex;
-    flex-direction: row;
+    align-items: $center;
+    justify-content: $center; 
+    flex-direction: $direction;
 }

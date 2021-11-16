@@ -2,8 +2,8 @@
 // Header 
 
 header {
-    @include flex-center;    
-    @include flex-column;     
+    
+    @include flex(center, column);     
     padding: 2%;
     .header__logo {
         img {
