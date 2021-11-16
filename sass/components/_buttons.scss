@@ -1,11 +1,13 @@
 // Buttons
 
+// Buttons Explorer and Commander
+
 .btn {
     @include flex(center, column); 
     color: white; 
     height: 40px;
-    width: 75%;
     border-radius: 25px;
+    font-size: 0.9rem;
     color: solid white;
     background-color: $color-primary;
     background-image:
@@ -19,6 +21,48 @@
             to top left, 
             $color-primary-lighter, $color-secondary-lighter
             );
-    }
+    }    
+}
+
+.btn__explorer {
+    width: 75%;
+}
+
+.btn__order {
+    width: 50%;
+}
+
+// Buttons de la partie Fonctionnement 
+
+.btn__funct{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row; 
     
+    border-radius: 18px;
+    width: 95%;
+    height: 60px;
+    background-color: $bg-main;
+    margin: 4% 0;
+    
+    .btn__funct__number {
+        @include flex-center(center); 
+        border-radius: 25px;
+        width: 22px;
+        height: 22px;
+        color: white; 
+        background-color: $color-primary; 
+
+        margin-left: -2.5%;
+        margin-right: 7%;
+    }
+    .btn__funct__icon {
+        margin-right: 7%;
+        color: $text-light; 
+    }
+    .btn__funct__text {
+        width: 100%;
+        
+    }
 }

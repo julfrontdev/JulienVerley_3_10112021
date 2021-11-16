@@ -2,7 +2,7 @@
 
 
 nav {
-    height: 50px; 
+    height: 12%; 
     .nav__search {
         @include flex(center, row); 
         background-color: $bg-search;
