@@ -115,12 +115,23 @@ footer {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
+  width: 100%;
   padding: 5% 10% 0 6%;
   background-color: #353535;
   color: #ededed;
 }
 footer ul {
+  width: 100%;
   padding: 0;
+}
+footer ul li {
+  width: 100%;
+  margin: 2.5% 0;
+  display: flex;
+}
+footer ul li .footer-icons {
+  width: 5%;
+  margin-right: 2%;
 }
 
 .footer__logo {
@@ -237,8 +248,20 @@ nav p {
   flex-direction: row;
   justify-content: space-between;
 }
+.restau__bloc__cards .restau__bloc__cards__container .restau__bloc__cards__container__text {
+  padding: 0 0 0 3%;
+}
+.restau__bloc__cards .restau__bloc__cards__container .restau__bloc__cards__container__text h3 {
+  margin-bottom: 0;
+}
+.restau__bloc__cards .restau__bloc__cards__container .restau__bloc__cards__container__text p {
+  margin-top: 5%;
+}
 .restau__bloc__cards .restau__bloc__cards__container .icon-heart {
   margin: 5% 5% 0 0;
+}
+.restau__bloc__cards .restau__bloc__cards__container .icon-heart img {
+  width: 22px;
 }
 
 /*# sourceMappingURL=style.css.map */
