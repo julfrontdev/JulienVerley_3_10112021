@@ -4,7 +4,7 @@
 header {
     
     @include flex(center, column);     
-    padding: 2%;
+    padding: 4% 0;
     .header__logo {
         img {
             height: 27px; 

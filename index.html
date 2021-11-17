@@ -27,28 +27,28 @@
 
         <main>
             
-            <nav>
-                <div class="nav__search"><!--search bloc-->
-                    <div class="nav__search__map-icon"><i class="fas fa-map-marker-alt"></i></div><!--map icon-->
-                    <div class="nav__search__text">
+            <form>
+                <div class="form__search"><!--search bloc-->
+                    <div class="form__search__map-icon"><i class="fas fa-map-marker-alt"></i></div><!--map icon-->
+                    <div class="form__search__text">
                         Paris, Belleville
                     </div>
                 </div><!--search bloc-->
-            </nav>
+            </form>
             
             <div class="presentation">
 
-                <div class="explorer">
+                <nav>
                     <h2><!--h1 pour les noms des restaurants dans les menus-->
                         Réservez le menu qui vous convient
                     </h2>
                     <p>
                         Découvrez des restaurants d'exception, sélectionnés par nos soins.
                     </p>
-                    <div class="btn btn__explorer"><!--button (idem button menus "Commander" btn__order)-->
+                    <div class="btn btn__nav"><!--button (idem button menus "Commander" btn__order)-->
                         Explorer nos restaurants
                     </div>
-                </div><!--explorer-->
+                </nav><!--explorer-->
             
                 <div class="functioning">
                     <h2>
@@ -92,44 +92,39 @@
             </div><!--presentation-->
 
 
-            <section class=""><!--Restaurants-->
-                <div class=""><!--title-->
-                    <h2>
-                        Restaurants
-                    </h2>
-                </div>
-                <div><!--bloc cards-->
+            <section class="restaurants"><!--Restaurants : les 4 menus-->
+                <h2>
+                    Restaurants
+                </h2>
+                
+                <div class="restau__bloc"><!--bloc cards-->
 
-                    <article><!--card 1-->
+                    <article class="restau__bloc__cards"><!--card 1-->
                         <a href="#"></a><!-- ! lien à préciser ! -->
-                        <div class=""><!--image 1--><!--position relative-->
+                        <div class="restau__bloc__cards__img"><!--image 1--><!--position relative-->
                             <img 
                             src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" 
                             alt="Restaurant La palette du goût"
                             />
-                            <div><!--position absolute-->
+                            <div class="nouveau"><!--position absolute-->
                                 Nouveau
                             </div>
                         </div>
-                        <div><!--text, heart icon-->
-                            <div><!--text-->
-                                <div>
-                                    <h3><!--weight bold-->
-                                        La palette du goût
-                                    </h3>
-                                </div>
-                                <div>
-                                    <h3>
-                                        Ménilmontant
-                                    </h3>
-                                </div>
+                        <div class="restau__bloc__cards__container"><!--text, heart icon-->
+                            <div class="restau__bloc__cards__container__text"><!--text-->
+                                <h3><!--weight bold-->
+                                    La palette du goût
+                                </h3>
+                                <p>
+                                    Ménilmontant
+                                </p>
                             </div><!--text-->
-                            <div><i class="far fa-heart"></i></div><!--heart icon-->
+                            <div class="icon-heart"><i class="far fa-2x fa-heart"></i></div><!--heart icon-->
                         </div>
                     </article>
 
                 </div>
-            </section><!--Restaurants-->
+            </section><!--Restaurants : les 4 menus-->
             
 
             <div>
@@ -141,12 +136,8 @@
         </main>
 
         <footer>
-            <div class=""><!--logo footer-->
-                <img
-                    class=""
-                    src="images/logo/ohmyfood.png" 
-                    alt="Logo"
-                />
+            <div class="footer__logo"><!--logo footer-->
+                ohmyfood
             </div>
             <ul><!--text-->
                 <li><!--text line1--><!--! supprimer les points !-->
@@ -163,7 +154,10 @@
                 <li>
                     Mentions légales
                 </li>
-                    <a class="" href="mailto:oh@myfood.fr">Contact</a><!-- ! supprimer bleu et surlignage ! -->
+                    <a 
+                    class="" 
+                    href="mailto:oh@myfood.fr">Contact
+                    </a><!-- ! supprimer bleu et surlignage ! -->
                 </li>
             </ul>
         </footer>

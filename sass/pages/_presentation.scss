@@ -4,14 +4,19 @@
     @include flex(center, column);
 }
 
-// Explorer 
+// Nav 
 
-.explorer {
+nav {
     @include flex(center, column); 
-    width: 90%;
+    width: 100%;
     text-align: center;
-    padding: 0 10%;
+    padding: 5% 10% 10% 10%;
+    background-color: $bg-main;
+    h2 {
+        width: 70%;
+    }
     p {
+        width: 90%;
         color: $text-light;
     }
         
@@ -20,8 +25,9 @@
 // Functioning
 
 .functioning {
-    width: 100%;  
-    margin-left: 4%;
+    width: 94%;  
+    margin: 0 0 10% 6%;
+    padding-top: 8%;
     h2 {
         align-items: flex-start; 
     }  

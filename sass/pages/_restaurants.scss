@@ -1,0 +1,60 @@
+// Restaurants
+
+.restaurants {
+    margin: 0 0 15% 0;
+    padding: 10% 0 0 6%;
+    background-color: $bg-main;
+
+    h2 { 
+    }
+    .restau__bloc {
+        @include flex(flex-start, column);
+        
+    }
+
+}
+
+.restau__bloc__cards {
+    @include box-shadow($light-shadow);  
+    height: 250px; 
+    width: 94%;
+    margin: 0 4% 5% 0;
+    border-radius: 10px;
+    
+    .restau__bloc__cards__img {
+        position: relative;
+            
+        img {
+            height: 170px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .nouveau {
+            @include flex-center(center); 
+            height: 30px;
+            width: 80px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: $color-tertiary;
+            color: $color-tertiary-darker; 
+        }
+    }
+    
+    .restau__bloc__cards__container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;        
+        justify-content: space-between;
+        
+        .restau__bloc__cards__container__text {  
+        }
+        
+        .icon-heart {
+            margin: 5% 5% 0 0;
+
+        }
+    }
+}

@@ -1,11 +1,12 @@
 // Buttons
 
-// Buttons Explorer and Commander
+// Buttons Explorer (form) et Commander
 
 .btn {
     @include flex(center, column); 
+    @include box-shadow($shadow); 
     color: white; 
-    height: 40px;
+    height: 50px;
     border-radius: 25px;
     font-size: 0.9rem;
     color: solid white;
@@ -24,8 +25,8 @@
     }    
 }
 
-.btn__explorer {
-    width: 75%;
+.btn__nav {
+    width: 57.5%;
 }
 
 .btn__order {
@@ -35,30 +36,29 @@
 // Buttons de la partie Fonctionnement 
 
 .btn__funct{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row; 
-    
+    @include flex (center, row);    
+    @include box-shadow($light-shadow);  
     border-radius: 18px;
-    width: 95%;
-    height: 60px;
+    width: 90%;
+    height: 72px;
     background-color: $bg-main;
     margin: 4% 0;
+    &:hover {
+        background-color: $color-primary-lightest;
+    }
     
     .btn__funct__number {
         @include flex-center(center); 
         border-radius: 25px;
         width: 22px;
         height: 22px;
-        color: white; 
+        color: $text-extra-light;
         background-color: $color-primary; 
-
         margin-left: -2.5%;
-        margin-right: 7%;
+        margin-right: 8%;
     }
     .btn__funct__icon {
-        margin-right: 7%;
+        margin-right: 8%;
         color: $text-light; 
     }
     .btn__funct__text {

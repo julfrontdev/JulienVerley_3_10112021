@@ -11,10 +11,8 @@
 @import "./components/buttons"; 
 
 @import "./layouts/header";
-@import "./layouts/nav"; 
-@import "./layouts/presentation"; 
-@import "./layouts/container";
-@import "./layouts/form";
+@import "./layouts/footer";
 
-@import "./pages/accueil"; // pages/ contient des règles spécifiques à une seule page, ici l'Accueil ; mieux @import "./pages/work"; ?
-@import "./pages/about";
+@import "./pages/form";  // pages : règles spécifiques à Accueil
+@import "./pages/presentation";
+@import "./pages/restaurants";

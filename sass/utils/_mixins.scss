@@ -1,5 +1,4 @@
-
-
+// Mixins 
 
 // Flexbox mixins
 
@@ -15,3 +14,9 @@
     align-items: $center;
     justify-content: $center; 
 }
+
+// Shadows mixins 
+
+@mixin box-shadow($params) {
+    box-shadow: $params;
+  }

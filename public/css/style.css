@@ -1,5 +1,19 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
+body, html, .bloc_page {
+  width: 100%;
+  margin-left: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ededed;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 0.85rem;
@@ -20,13 +34,18 @@ p {
   font-family: "Shrikhand", cursive;
 }
 
+.icon-heart {
+  color: dimgrey;
+}
+
 .btn {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  box-shadow: 0px 2px 8px grey;
   color: white;
-  height: 40px;
+  height: 50px;
   border-radius: 25px;
   font-size: 0.9rem;
   color: solid white;
@@ -37,8 +56,8 @@ p {
   background-image: linear-gradient(to top left, #a674e2, #ff9de4);
 }
 
-.btn__explorer {
-  width: 75%;
+.btn__nav {
+  width: 57.5%;
 }
 
 .btn__order {
@@ -48,13 +67,17 @@ p {
 .btn__funct {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: row;
+  box-shadow: 0px 2px 8px #e5e5e5;
   border-radius: 18px;
-  width: 95%;
-  height: 60px;
+  width: 90%;
+  height: 72px;
   background-color: #f7f7f7;
   margin: 4% 0;
+}
+.btn__funct:hover {
+  background-color: #f4eefc;
 }
 .btn__funct .btn__funct__number {
   display: flex;
@@ -63,13 +86,13 @@ p {
   border-radius: 25px;
   width: 22px;
   height: 22px;
-  color: white;
+  color: #ededed;
   background-color: #9356DC;
   margin-left: -2.5%;
-  margin-right: 7%;
+  margin-right: 8%;
 }
 .btn__funct .btn__funct__icon {
-  margin-right: 7%;
+  margin-right: 8%;
   color: dimgrey;
 }
 .btn__funct .btn__funct__text {
@@ -81,29 +104,49 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 2%;
+  padding: 4% 0;
 }
 header .header__logo img {
   height: 27px;
 }
 
-nav {
-  height: 12%;
+footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 5% 10% 0 6%;
+  background-color: #353535;
+  color: #ededed;
 }
-nav .nav__search {
+footer ul {
+  padding: 0;
+}
+
+.footer__logo {
+  font-size: 1rem;
+  font-weight: 100;
+  font-family: "Shrikhand", cursive;
+}
+
+form {
+  height: 12%;
+  width: 100%;
+}
+form .form__search {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   background-color: #ededed;
   width: 100%;
-  padding: 3% 0;
+  padding: 5% 0;
   box-shadow: 0px -2px 2px lightgrey;
 }
-nav .nav__search .nav__search__map-icon {
+form .form__search .form__search__map-icon {
   margin-left: -5%;
 }
-nav .nav__search .nav__search__text {
+form .form__search .form__search__text {
   padding-left: 5%;
 }
 
@@ -114,22 +157,28 @@ nav .nav__search .nav__search__text {
   flex-direction: column;
 }
 
-.explorer {
+nav {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   text-align: center;
-  padding: 0 10%;
+  padding: 5% 10% 10% 10%;
+  background-color: #f7f7f7;
 }
-.explorer p {
+nav h2 {
+  width: 70%;
+}
+nav p {
+  width: 90%;
   color: dimgrey;
 }
 
 .functioning {
-  width: 100%;
-  margin-left: 4%;
+  width: 94%;
+  margin: 0 0 10% 6%;
+  padding-top: 8%;
 }
 .functioning h2 {
   align-items: flex-start;
@@ -140,6 +189,56 @@ nav .nav__search .nav__search__text {
   justify-content: center;
   flex-direction: column;
   width: 100%;
+}
+
+.restaurants {
+  margin: 0 0 15% 0;
+  padding: 10% 0 0 6%;
+  background-color: #f7f7f7;
+}
+.restaurants .restau__bloc {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.restau__bloc__cards {
+  box-shadow: 0px 2px 8px #e5e5e5;
+  height: 250px;
+  width: 94%;
+  margin: 0 4% 5% 0;
+  border-radius: 10px;
+}
+.restau__bloc__cards .restau__bloc__cards__img {
+  position: relative;
+}
+.restau__bloc__cards .restau__bloc__cards__img img {
+  height: 170px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.restau__bloc__cards .restau__bloc__cards__img .nouveau {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 80px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #99E2D0;
+  color: #278870;
+}
+.restau__bloc__cards .restau__bloc__cards__container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.restau__bloc__cards .restau__bloc__cards__container .icon-heart {
+  margin: 5% 5% 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */

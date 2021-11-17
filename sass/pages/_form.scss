@@ -1,18 +1,19 @@
 // Navigation Nav
 
 
-nav {
+form {
     height: 12%; 
-    .nav__search {
+    width: 100%;
+    .form__search {
         @include flex(center, row); 
         background-color: $bg-search;
         width: 100%;
-        padding: 3% 0;
+        padding: 5% 0;
         box-shadow: 0px -2px 2px lightgrey;   
-            .nav__search__map-icon {
+            .form__search__map-icon {
                 margin-left: -5%;
             }
-            .nav__search__text {
+            .form__search__text {
                 padding-left: 5%;
             }
     }    
