@@ -15,6 +15,12 @@
     justify-content: $center; 
 }
 
+@mixin flex-space ($space-between, $direction) {
+    display: flex;
+    justify-content: $space-between;
+    flex-direction: $direction;        
+}
+
 // Shadows mixins 
 
 @mixin box-shadow($params) {

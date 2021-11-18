@@ -4,17 +4,34 @@
 form {
     height: 12%; 
     width: 100%;
+    
     .form__search {
         @include flex(center, row); 
         background-color: $bg-search;
         width: 100%;
         padding: 5% 0;
         box-shadow: 0px -2px 2px lightgrey;   
+
+        ::placeholder {
+            color: $text-light;
+            font-weight: bolder; /* Firefox */ 
+          }
+
+        input {
+            border: solid $text-extra-light; 
+            margin-left: 2%;
+            border: none;
+            outline: none;
+        }
+
             .form__search__map-icon {
-                margin-left: -5%;
+                margin-left: 10%;
+                color: $text-light;
             }
+            
             .form__search__text {
-                padding-left: 5%;
+                background-color: $bg-search;
+                font-size: 0.9rem;
             }
     }    
 }

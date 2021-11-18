@@ -1,0 +1,75 @@
+// Menus
+
+.menus__img img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-menu {
+    @include flex(center, column); 
+    background-color: $bg-main; 
+}
+
+.menus__bloc {
+    width: 92%;
+    padding: 0 4%; 
+    padding-bottom: 10%;
+    border-radius: 25px 25px 0 0;
+    background-color: $bg-main;
+
+    .menus__bloc__title-icon {
+        @include flex-space (space-between, row); 
+
+        .icon-heart {
+            margin: 9% 5% 0 0;
+        }
+    }
+
+    .menus__bloc__subheadings {
+        text-transform: uppercase;
+        color: $text-light;
+        margin-top: 12%;
+        position: relative; // pour le pseudo élément
+    
+        ::after {
+            content: '';
+            position: absolute;
+            width: 11.5%;
+            height: 2.5px;
+            left: 0;
+            bottom: -5px;
+            background-color: $color-tertiary; 
+        }
+    }
+
+    .menus__bloc__pickings {
+        background-color: $bg-restau-cards-btn;
+        border-radius: 15px;
+        margin: 0 0 4% 0;
+
+        h3 {
+            padding: 3.5% 0 0 3%;
+            margin: 1% 0 0 0; 
+        }
+
+        .menus__bloc__pickings__details-price {
+            @include flex-space(space-between, row);
+
+            h4 {
+                padding: 1% 0 0 3%;
+                margin: 1% 0 5% 0;
+                color: $text-light; 
+            }
+            
+            h3 { // € price
+                padding: 0 6% 0 0 ;
+                margin: 2% 0 0 0;
+            }
+        }   
+    }
+}
+
+
+
+

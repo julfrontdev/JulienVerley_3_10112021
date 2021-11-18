@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
-html, body, .bloc_page {
+html, body, #bloc-page {
   width: 100%;
   margin: 0;
 }
@@ -31,7 +31,7 @@ p {
   font-weight: 300;
 }
 
-.menu-title {
+.menus-title {
   font-family: "Shrikhand", cursive;
 }
 
@@ -58,11 +58,15 @@ p {
 }
 
 .btn__nav {
-  width: 57.5%;
+  width: 70%;
 }
 
 .btn__order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 50%;
+  margin: 0 0 20% 0;
 }
 
 .btn__funct {
@@ -101,14 +105,97 @@ p {
 }
 
 header {
+  text-align: center;
+  padding: 5% 0 4% 0;
+  width: 100%;
+}
+header .header__container {
+  position: relative;
+  width: 100%;
+}
+header .header__container .icon-arrow {
+  position: absolute;
+  top: 7px;
+  left: 20px;
+}
+header .header__container .icon-arrow > a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.header__logo img {
+  height: 27px;
+}
+
+.menus__img img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.img-menu {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 4% 0;
+  background-color: #f7f7f7;
 }
-header .header__logo img {
-  height: 27px;
+
+.menus__bloc {
+  width: 92%;
+  padding: 0 4%;
+  padding-bottom: 10%;
+  border-radius: 25px 25px 0 0;
+  background-color: #f7f7f7;
+}
+.menus__bloc .menus__bloc__title-icon {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.menus__bloc .menus__bloc__title-icon .icon-heart {
+  margin: 9% 5% 0 0;
+}
+.menus__bloc .menus__bloc__subheadings {
+  text-transform: uppercase;
+  color: dimgrey;
+  margin-top: 12%;
+  position: relative;
+}
+.menus__bloc .menus__bloc__subheadings ::after {
+  content: "";
+  position: absolute;
+  width: 11.5%;
+  height: 2.5px;
+  left: 0;
+  bottom: -5px;
+  background-color: #99E2D0;
+}
+.menus__bloc .menus__bloc__pickings {
+  background-color: white;
+  border-radius: 15px;
+  margin: 0 0 4% 0;
+}
+.menus__bloc .menus__bloc__pickings h3 {
+  padding: 3.5% 0 0 3%;
+  margin: 1% 0 0 0;
+}
+.menus__bloc .menus__bloc__pickings .menus__bloc__pickings__details-price {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.menus__bloc .menus__bloc__pickings .menus__bloc__pickings__details-price h4 {
+  padding: 1% 0 0 3%;
+  margin: 1% 0 5% 0;
+  color: dimgrey;
+}
+.menus__bloc .menus__bloc__pickings .menus__bloc__pickings__details-price h3 {
+  padding: 0 6% 0 0;
+  margin: 2% 0 0 0;
 }
 
 footer {
@@ -119,6 +206,7 @@ footer {
   padding: 5% 10% 10% 6%;
   background-color: #353535;
   color: #ededed;
+  bottom: 0;
 }
 footer ul {
   width: 100%;
@@ -155,11 +243,24 @@ form .form__search {
   padding: 5% 0;
   box-shadow: 0px -2px 2px lightgrey;
 }
+form .form__search ::placeholder {
+  color: dimgrey;
+  font-weight: bolder;
+  /* Firefox */
+}
+form .form__search input {
+  border: solid #ededed;
+  margin-left: 2%;
+  border: none;
+  outline: none;
+}
 form .form__search .form__search__map-icon {
-  margin-left: -5%;
+  margin-left: 10%;
+  color: dimgrey;
 }
 form .form__search .form__search__text {
-  padding-left: 5%;
+  background-color: #ededed;
+  font-size: 0.9rem;
 }
 
 .presentation {
@@ -175,7 +276,7 @@ nav {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  padding: 5% 10% 10% 10%;
+  padding: 5% 8% 8% 10%;
   background-color: #f7f7f7;
 }
 nav h2 {
@@ -266,9 +367,6 @@ nav p {
 }
 .restau__bloc__cards .restau__bloc__cards__container .icon-heart {
   margin: 5% 5% 0 0;
-}
-.restau__bloc__cards .restau__bloc__cards__container .icon-heart img {
-  width: 22px;
 }
 
 /*# sourceMappingURL=style.css.map */

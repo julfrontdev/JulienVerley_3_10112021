@@ -26,11 +26,13 @@
 }
 
 .btn__nav {
-    width: 57.5%;
+    width: 70%;
 }
 
 .btn__order {
+    @include flex-center(center);
     width: 50%;
+    margin: 0 0 20% 0; 
 }
 
 // Buttons de la partie Fonctionnement 
