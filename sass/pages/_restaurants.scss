@@ -21,10 +21,17 @@
     margin: 0 4% 5% 0;
     border-radius: 10px;
     background-color: $bg-restau-cards-btn;
+    position: relative; // cartes cliquables
+    > a { // cartes cliquables
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0; 
+    }
     
     .restau__bloc__cards__img {
-        position: relative;
-            
+ 
         img {
             height: 170px;
             width: 100%;

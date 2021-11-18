@@ -222,9 +222,14 @@ nav p {
   margin: 0 4% 5% 0;
   border-radius: 10px;
   background-color: white;
-}
-.restau__bloc__cards .restau__bloc__cards__img {
   position: relative;
+}
+.restau__bloc__cards > a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 .restau__bloc__cards .restau__bloc__cards__img img {
   height: 170px;

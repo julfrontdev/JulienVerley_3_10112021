@@ -5,9 +5,6 @@ html, body, .bloc_page {
     margin: 0;
 }
 
-.bloc_page {
-}
-
 li {
     list-style-type:none; 
 }
@@ -17,3 +14,4 @@ a {
     color: $text-extra-light;
     background-color: transparent; //Remove the gray background on active links in IE 10.
 }
+
