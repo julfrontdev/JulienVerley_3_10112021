@@ -2,8 +2,7 @@
 
 footer {
     @include flex(flex-start, column); 
-    width: 100%;
-    padding: 5% 10% 0 6%;
+    padding: 5% 10% 10% 6%;
     background-color: $bg-footer;
     color: $text-extra-light;
 
@@ -12,7 +11,7 @@ footer {
         padding: 0;
         li {
             width: 100%;
-            margin: 2.5% 0; 
+            margin: 2% 0 3% 0; 
             display: flex;
             .footer-icons {
                 width: 5%;
@@ -26,4 +25,5 @@ footer {
     font-size: 1rem; 
     font-weight: 100;
     font-family: $Shrikhand; 
+    margin-top: 2%;
 }

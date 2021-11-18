@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
-body, html, .bloc_page {
+html, body, .bloc_page {
   width: 100%;
-  margin-left: 0;
+  margin: 0;
 }
 
 li {
@@ -12,6 +12,7 @@ li {
 a {
   text-decoration: none;
   color: #ededed;
+  background-color: transparent;
 }
 
 body {
@@ -115,8 +116,7 @@ footer {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  width: 100%;
-  padding: 5% 10% 0 6%;
+  padding: 5% 10% 10% 6%;
   background-color: #353535;
   color: #ededed;
 }
@@ -126,7 +126,7 @@ footer ul {
 }
 footer ul li {
   width: 100%;
-  margin: 2.5% 0;
+  margin: 2% 0 3% 0;
   display: flex;
 }
 footer ul li .footer-icons {
@@ -138,6 +138,7 @@ footer ul li .footer-icons {
   font-size: 1rem;
   font-weight: 100;
   font-family: "Shrikhand", cursive;
+  margin-top: 2%;
 }
 
 form {
@@ -173,7 +174,6 @@ nav {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
   text-align: center;
   padding: 5% 10% 10% 10%;
   background-color: #f7f7f7;
@@ -203,7 +203,7 @@ nav p {
 }
 
 .restaurants {
-  margin: 0 0 15% 0;
+  margin: 0;
   padding: 10% 0 0 6%;
   background-color: #f7f7f7;
 }
@@ -212,6 +212,7 @@ nav p {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
+  padding-bottom: 15%;
 }
 
 .restau__bloc__cards {
@@ -220,6 +221,7 @@ nav p {
   width: 94%;
   margin: 0 4% 5% 0;
   border-radius: 10px;
+  background-color: white;
 }
 .restau__bloc__cards .restau__bloc__cards__img {
   position: relative;

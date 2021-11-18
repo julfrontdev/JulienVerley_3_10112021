@@ -8,7 +8,6 @@
 
 nav {
     @include flex(center, column); 
-    width: 100%;
     text-align: center;
     padding: 5% 10% 10% 10%;
     background-color: $bg-main;
