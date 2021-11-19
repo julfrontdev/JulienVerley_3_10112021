@@ -9,14 +9,15 @@
     height: 50px;
     border-radius: 25px;
     font-size: 0.9rem;
-    color: solid white;
+    color: white;
     background-color: $color-primary;
     background-image:
         linear-gradient(
         to top left, 
         $color-primary, $color-secondary
         );
-    &:hover{
+    &:hover {
+        @include box-shadow($shadow-darker); 
         background-image:
             linear-gradient(
             to top left, 
@@ -39,7 +40,7 @@
 
 .btn__funct{
     @include flex (center, row);    
-    @include box-shadow($light-shadow);  
+    @include box-shadow($shadow-light);  
     border-radius: 18px;
     width: 90%;
     height: 72px;
@@ -47,16 +48,17 @@
     margin: 4% 0;
     &:hover {
         background-color: $color-primary-lightest;
+        @include box-shadow($shadow-mid-light);  
     }
     
     .btn__funct__number {
         @include flex-center(center); 
         border-radius: 25px;
-        width: 22px;
+        width: 28px;
         height: 22px;
         color: $text-extra-light;
         background-color: $color-primary; 
-        margin-left: -2.5%;
+        margin-left: -10px;
         margin-right: 8%;
     }
     .btn__funct__icon {

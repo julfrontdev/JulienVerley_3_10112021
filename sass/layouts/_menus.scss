@@ -12,11 +12,9 @@
 }
 
 .menus__bloc {
-
     position: relative; // pour superposer
     display: inline-block;
     top: -25px;
-
     width: 92%;
     padding: 0 4%; 
     padding-bottom: 10%;
@@ -25,9 +23,20 @@
 
     .menus__bloc__title-icon {
         @include flex-space (space-between, row); 
-
+        
         .icon-heart {
+            position: relative;
             margin: 9% 5% 0 0;
+        }
+
+        .icon-heart__full {
+
+            
+
+            overflow: hidden;
+            position: absolute;
+            top: 38px; // 30px
+            right: 32px; // 32px et overflow: hidden ?
         }
     }
 
@@ -49,6 +58,7 @@
     }
 
     .menus__bloc__pickings {
+        @include box-shadow($shadow-mid-light);  
         background-color: $bg-restau-cards-btn;
         border-radius: 15px;
         margin: 0 0 4% 0;
@@ -74,7 +84,4 @@
         }   
     }
 }
-
-
-
 
