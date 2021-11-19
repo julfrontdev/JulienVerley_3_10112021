@@ -17,14 +17,19 @@ h2 {
     font-weight: 800;
 }
 
+h3 {
+    font-size: 1.05rem;
+}
+
+h4 {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
 p {
     font-size: 1rem;
     font-weight: 300;
 }
-
-.menus-title {
-    font-family: $Shrikhand; 
-    }  
 
 
 // Icons FontAwesome
@@ -32,3 +37,10 @@ p {
 .icon-heart {
     color: $text-light;
 }
+
+// Parts
+
+.menus-title {
+    font-family: $Shrikhand; 
+}  
+

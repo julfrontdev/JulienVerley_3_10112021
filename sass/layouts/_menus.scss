@@ -12,6 +12,11 @@
 }
 
 .menus__bloc {
+
+    position: relative; // pour superposer
+    display: inline-block;
+    top: -25px;
+
     width: 92%;
     padding: 0 4%; 
     padding-bottom: 10%;
