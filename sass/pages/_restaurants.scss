@@ -23,6 +23,7 @@
     background-color: $bg-restau-cards-btn;
     position: relative; // cartes cliquables
     > a { // cartes cliquables
+        z-index: 2; // partie cliquable au dessus de .nouveau
         position: absolute;
         top: 0;
         right: 0;
@@ -41,6 +42,7 @@
         
         .nouveau {
             @include flex-center(center); 
+            z-index: 1; // sous la carte cliquable
             height: 30px;
             width: 80px;
             position: absolute;

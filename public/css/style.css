@@ -48,6 +48,50 @@ p {
   font-family: "Shrikhand", cursive;
 }
 
+#bloc-page-index {
+  opacity: 0;
+  position: relative;
+  z-index: 1;
+  animation: anim1 1.5s linear forwards 0.5s;
+}
+
+body {
+  position: relative;
+}
+body .loader__container {
+  position: absolute;
+  left: 48%;
+  top: 350px;
+  background-color: solid black;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+}
+body .loader__container .loader {
+  z-index: 2;
+  opacity: 1;
+  animation: anim2 1.5s linear forwards 0s;
+  background: linear-gradient(to top left, #a674e2, #ff9de4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes anim1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes anim2 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .menus__bloc .pickings1 {
   opacity: 0;
   animation: anim 1s linear forwards 0s;
@@ -69,6 +113,21 @@ p {
     opacity: 1;
   }
 }
+.icon-heart {
+  outline: solid yellow;
+}
+
+.icon-heart__full {
+  outline: solid black;
+}
+
+.fa-heart-full {
+  background: linear-gradient(to top left, #a674e2, #ff9de4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  outline: solid black;
+}
+
 .btn {
   display: flex;
   align-items: center;
@@ -369,6 +428,7 @@ nav p {
   position: relative;
 }
 .restau__bloc__cards > a {
+  z-index: 2;
   position: absolute;
   top: 0;
   right: 0;
@@ -385,6 +445,7 @@ nav p {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
   height: 30px;
   width: 80px;
   position: absolute;
