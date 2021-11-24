@@ -8,6 +8,8 @@
 
 nav {
     @include flex(center, column); 
+    width: 100%;
+    
     text-align: center;
     padding: 5% 8% 8% 10%;
     background-color: $bg-main;
@@ -26,7 +28,7 @@ nav {
 .functioning {
     width: 94%;  
     margin: 0 0 10% 6%;
-    padding-top: 8%;
+    padding-top: 50px;
     h2 {
         align-items: flex-start; 
     }  

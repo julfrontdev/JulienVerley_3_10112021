@@ -2,14 +2,14 @@
 
 
 form {
-    height: 12%; 
+    
     width: 100%;
     
     .form__search {
         @include flex(center, row); 
         background-color: $bg-search;
         width: 100%;
-        padding: 5% 0;
+        padding: 15px 0;
         box-shadow: 0px -2px 2px lightgrey;   
 
         ::placeholder {

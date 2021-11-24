@@ -23,17 +23,20 @@
 
     .menus__bloc__title-icon {
         @include flex-space (space-between, row); 
+        position: relative;
         
-        .icon-heart {
-            position: relative;
-            margin: 9% 5% 0 0;
+        .icon-heart { // coeur 
+            margin-top: 30px;
+            margin-right: 10px;
         }
 
-        .icon-heart__full {
-            overflow: hidden;
+        .icon-heart__full { // coeur plein
             position: absolute;
-            top: 38px; // 30px
-            right: 32px; // 32px et overflow: hidden ?
+            top: 30px; 
+            right: 10px; // overflow: hidden, pas utilisé
+            background: linear-gradient(to bottom left, $color-primary, $color-secondary); // dégradé sur le background
+            -webkit-background-clip: text; // background apparait sur le texte uniquement
+            -webkit-text-fill-color: transparent; // text transparent
         }
     }
 
@@ -43,7 +46,7 @@
         margin-top: 12%;
         position: relative; // pour le pseudo élément
     
-        ::after {
+        ::after { // soulignage partiel vert 
             content: '';
             position: absolute;
             width: 11.5%;
