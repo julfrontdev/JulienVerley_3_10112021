@@ -85,16 +85,28 @@ body {
 
 // Heart 
 
+.restau__bloc__cards__container {
+    .icon-heart-index {
+        opacity: 1;
+            &:active {
+                animation: heart .5s ease forwards;
+            }
+    }
+    .icon-heart-index__full {
+        opacity: 0;
+            &:active {
+                animation: heart__full .5s ease forwards;
+            }
+    }
+}
 
-.menus__bloc__title-icon {
-    
+.menus__bloc__title-icon {   
     .icon-heart {
         opacity: 1;
             &:active {
                 animation: heart .5s ease forwards;
             }
     }
-
     .icon-heart__full {
         opacity: 0;
             &:active {

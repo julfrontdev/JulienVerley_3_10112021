@@ -63,18 +63,31 @@
         border-radius: 15px;
         margin: 0 0 4% 0;
 
-        h3 {
+        > h3 {
             padding: 3.5% 0 0 3%;
             margin: 1% 0 0 0; 
+            
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 80%; 
+
         }
 
         .menus__bloc__pickings__details-price {
             @include flex-space(space-between, row);
+            
 
-            h4 {
+            h4 { // détails
                 padding: 1% 0 0 3%;
                 margin: 1% 0 5% 0;
                 color: $text-light; 
+
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 80%; 
+
             }
             
             h3 { // € price
