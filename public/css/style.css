@@ -160,6 +160,10 @@ body .loader__container .loader {
     opacity: 1;
   }
 }
+.check {
+  overflow: hidden;
+}
+
 .btn {
   display: flex;
   align-items: center;
@@ -269,6 +273,7 @@ header .header__container .icon-arrow > a {
 
 .menus__bloc {
   position: relative;
+  z-index: 3;
   display: inline-block;
   top: -25px;
   width: 92%;
@@ -310,37 +315,70 @@ header .header__container .icon-arrow > a {
   bottom: -5px;
   background-color: #99E2D0;
 }
-.menus__bloc .menus__bloc__pickings {
+.menus__bloc .menus__bloc__btn {
   box-shadow: #aaa9a9;
+  display: flex;
+  position: relative;
+  z-index: 2;
+  justify-content: space-between;
   background-color: white;
   border-radius: 15px;
   margin: 0 0 4% 0;
+  height: 68px;
 }
-.menus__bloc .menus__bloc__pickings > h3 {
-  padding: 3.5% 0 0 3%;
-  margin: 1% 0 0 0;
+.menus__bloc .menus__bloc__btn:active {
+  width: 80%;
+  border-radius: 15px 0 0 15px;
+}
+.menus__bloc .menus__bloc__btn .menus__bloc__btn__title-details {
+  padding: 0 0 0 0;
+  margin: 15px 0 15px 2.5%;
+  width: 75%;
+}
+.menus__bloc .menus__bloc__btn .menus__bloc__btn__title-details h3 {
+  padding: 0 0 0 0;
+  margin: 0 0 10px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 80%;
 }
-.menus__bloc .menus__bloc__pickings .menus__bloc__pickings__details-price {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-.menus__bloc .menus__bloc__pickings .menus__bloc__pickings__details-price h4 {
-  padding: 1% 0 0 3%;
-  margin: 1% 0 5% 0;
+.menus__bloc .menus__bloc__btn .menus__bloc__btn__title-details h4 {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
   color: dimgrey;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 80%;
 }
-.menus__bloc .menus__bloc__pickings .menus__bloc__pickings__details-price h3 {
-  padding: 0 6% 0 0;
-  margin: 2% 0 0 0;
+.menus__bloc .menus__bloc__btn .menus__bloc__btn__price {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.menus__bloc .menus__bloc__btn .menus__bloc__btn__price h3 {
+  padding: 0 0 0 0;
+  margin: 42px 20px 0 15px;
+}
+
+.box-check {
+  position: absolute;
+  z-index: 1;
+  right: 4%;
+  width: 20%;
+  height: 68px;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+}
+
+.check {
+  position: absolute;
+  padding: 2px 3.5px;
+  z-index: 4;
+  color: #99E2D0;
+  border-radius: 50px;
+  background-color: #ffff;
+  right: -16%;
+  bottom: 23px;
 }
 
 footer {

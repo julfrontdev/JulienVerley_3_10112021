@@ -13,7 +13,8 @@
 
 .menus__bloc {
     position: relative; // pour superposer
-    display: inline-block;
+    z-index: 3;
+    display: inline-block; // ?? 
     top: -25px;
     width: 92%;
     padding: 0 4%; 
@@ -57,44 +58,80 @@
         }
     }
 
-    .menus__bloc__pickings {
-        @include box-shadow($shadow-mid-light);  
+    .menus__bloc__btn {
+        @include box-shadow($shadow-mid-light);          
+        display: flex;
+        position: relative;
+        z-index: 2; 
+        justify-content: space-between;
         background-color: $bg-restau-cards-btn;
         border-radius: 15px;
         margin: 0 0 4% 0;
+        height: 68px; // nécessaire ? 
 
-        > h3 {
-            padding: 3.5% 0 0 3%;
-            margin: 1% 0 0 0; 
-            
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+        &:active {
             width: 80%; 
-
+            border-radius: 15px 0 0 15px;
         }
+        
 
-        .menus__bloc__pickings__details-price {
-            @include flex-space(space-between, row);
-            
+        .menus__bloc__btn__title-details {
+            padding: 0 0 0 0;
+            margin: 15px 0 15px 2.5%; 
+            width: 75%;
 
-            h4 { // détails
-                padding: 1% 0 0 3%;
-                margin: 1% 0 5% 0;
-                color: $text-light; 
+            h3 { // title
+                padding: 0 0 0 0 ;
+                margin: 0 0 10px 0;
 
-                white-space: nowrap;
+                white-space: nowrap; // ... 
                 overflow: hidden;
                 text-overflow: ellipsis;
-                width: 80%; 
-
             }
+
+            h4 { // détails
+                padding: 0 0 0 0;
+                margin: 0 0 0 0;
+                color: $text-light; 
+
+                white-space: nowrap; // ... 
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+
+        .menus__bloc__btn__price {
+            @include flex-space(space-between, row);
             
             h3 { // € price
-                padding: 0 6% 0 0 ;
-                margin: 2% 0 0 0;
+                padding: 0 0 0 0 ;
+                margin: 42px 20px 0 15px;
             }
         }   
     }
 }
 
+.box-check { // HTML : à placer correctement OU superposition à revoir
+    position: absolute; 
+    z-index: 1;
+    right: 4%; 
+    width: 20%; 
+    height: 68px; 
+    background-color : $color-tertiary;
+    border-radius: 0 15px 15px 0;           
+
+    
+}
+
+.check {
+    position: absolute; 
+    padding: 2px 3.5px;
+    z-index: 4; 
+    color: $color-tertiary; 
+    border-radius: 50px;
+    background-color: #ffff;    
+    right: -16%; // A revoir ? 
+    bottom: 23px; // hauteur à revoir ?
+
+
+}
