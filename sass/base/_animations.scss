@@ -124,44 +124,23 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Pickings check (coche) 
 
 .menus__bloc__btn {
-    
+   // &:active {    width: 80%;     border-radius: 15px 0 0 15px;   // transition: ease-in-out 5s; // ! neutralise le border-radius ! // &:active fonctionne mais dans _menus.scss
+}
 
-    .box-check { // A REVOIR
-        // transition: transform 1.5s ease-in-out;
-     
-    }
+.box-check {    
 }
 
 .check {
-    // position: absolute;
-    overflow: hidden;
-
     
+}
+
+@keyframes menus__bloc__btn { // fait apparaitre la box-check
+
+}
+
+@keyframes check { // rotation du check
+
 }

@@ -9,18 +9,36 @@
 .img-menu {
     @include flex(center, column); 
     background-color: $bg-main; 
+    width: 100%;
+}
+
+.cartes-des-menus {
+    position: relative;
+    top: -25px;
+    z-index: 4;
+    border-radius: 25px 25px 0 0;
+    width: 92%;
+    background-color: $bg-main;
+    padding: 0 4%;
+    overflow: hidden; // cache le check
 }
 
 .menus__bloc {
     position: relative; // pour superposer
     z-index: 3;
-    display: inline-block; // ?? 
-    top: -25px;
-    width: 92%;
-    padding: 0 4%; 
-    padding-bottom: 10%;
-    border-radius: 25px 25px 0 0;
-    background-color: $bg-main;
+    display: inline-block; // ??
+    width: 100%;
+    padding: 0 0 3.5% 0; 
+
+    .box-check { // HTML : à placer correctement OU superposition à revoir
+        position: absolute; 
+        z-index: 1;
+        right: 0%; 
+        width: 20%; 
+        height: 68px; // 68px
+        background-color : $color-tertiary;
+        border-radius: 0 15px 15px 0;           
+    }    
 
     .menus__bloc__title-icon {
         @include flex-space (space-between, row); 
@@ -56,6 +74,10 @@
             bottom: -5px;
             background-color: $color-tertiary; 
         }
+
+        h3 {
+            margin: 0 0 2% 0; 
+        }
     }
 
     .menus__bloc__btn {
@@ -66,14 +88,14 @@
         justify-content: space-between;
         background-color: $bg-restau-cards-btn;
         border-radius: 15px;
-        margin: 0 0 4% 0;
-        height: 68px; // nécessaire ? 
+        margin: 0 0 0 0;
+        height: 68px; 
 
         &:active {
             width: 80%; 
             border-radius: 15px 0 0 15px;
+            // transition: ease-in-out 5s; // ! neutralise le border-radius (autre propriété transform assignée à cet élément ? opacity pour pickings1 2 3) !
         }
-        
 
         .menus__bloc__btn__title-details {
             padding: 0 0 0 0;
@@ -98,6 +120,18 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
+
+            .check {
+                position: absolute; 
+                padding: 2px 3.5px;
+                z-index: 4; 
+                color: $color-tertiary; 
+                border-radius: 50px;
+                background-color: #ffff;    
+                right: -16%; // A revoir ? 
+                bottom: 23px; // hauteur à revoir ?
+            }
+            
         }
 
         .menus__bloc__btn__price {
@@ -109,29 +143,4 @@
             }
         }   
     }
-}
-
-.box-check { // HTML : à placer correctement OU superposition à revoir
-    position: absolute; 
-    z-index: 1;
-    right: 4%; 
-    width: 20%; 
-    height: 68px; 
-    background-color : $color-tertiary;
-    border-radius: 0 15px 15px 0;           
-
-    
-}
-
-.check {
-    position: absolute; 
-    padding: 2px 3.5px;
-    z-index: 4; 
-    color: $color-tertiary; 
-    border-radius: 50px;
-    background-color: #ffff;    
-    right: -16%; // A revoir ? 
-    bottom: 23px; // hauteur à revoir ?
-
-
 }
