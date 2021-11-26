@@ -20,24 +20,26 @@
     width: 92%;
     background-color: $bg-main;
     padding: 0 4%;
-    overflow: hidden; // cache le check
 }
 
+
+
 .menus__bloc {
-    position: relative; // pour superposer
+    position: relative;
     z-index: 3;
-    display: inline-block; // ??
+    display: inline-block; 
     width: 100%;
     padding: 0 0 3.5% 0; 
+    overflow: hidden; // cache le check
 
-    .box-check { // HTML : à placer correctement OU superposition à revoir
+    .box-check { // partie verte
         position: absolute; 
         z-index: 1;
         right: 0%; 
         width: 20%; 
         height: 68px; // 68px
         background-color : $color-tertiary;
-        border-radius: 0 15px 15px 0;           
+        border-radius: 0 15px 15px 0;     
     }    
 
     .menus__bloc__title-icon {
@@ -90,12 +92,6 @@
         border-radius: 15px;
         margin: 0 0 0 0;
         height: 68px; 
-
-        &:active {
-            width: 80%; 
-            border-radius: 15px 0 0 15px;
-            // transition: ease-in-out 5s; // ! neutralise le border-radius (autre propriété transform assignée à cet élément ? opacity pour pickings1 2 3) !
-        }
 
         .menus__bloc__btn__title-details {
             padding: 0 0 0 0;

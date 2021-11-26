@@ -15,14 +15,16 @@ body {
 
     .loader__container {
         position: absolute;
-        left: 45%;
-        top: 350px;
+        width: 100vh 100vh;
+        top: 50vh;
+        left: calc(50% - 2em);
 
-        background-color: solid black;
+        background-color: solid black; // j'aimerais un disque (assiette), ne fonctionne pas 
         border-radius: 50px;
+        z-index: 3;
 
         .loader {
-            z-index: 3; 
+            z-index: 4; 
             opacity: 1;
             animation: loader 2.3s linear forwards .2s;
             background: linear-gradient(
@@ -57,6 +59,7 @@ body {
 }
 
 
+
 // Pickings (plats)
 
 .menus__bloc {
@@ -79,19 +82,21 @@ body {
     100% {opacity: 1;}
 }
 
+
+
 // Heart 
 
 .restau__bloc__cards__container {
     .icon-heart-index {
         opacity: 1;
-            &:active {
-                animation: heart .5s ease forwards;
+            &:hover {
+                animation: heart .6s ease forwards;
             }
     }
     .icon-heart-index__full {
         opacity: 0;
-            &:active {
-                animation: heart__full .5s ease forwards;
+            &:hover {
+                animation: heart__full .6s ease forwards;
             }
     }
 }
@@ -99,14 +104,14 @@ body {
 .menus__bloc__title-icon {   
     .icon-heart {
         opacity: 1;
-            &:active {
-                animation: heart .5s ease forwards;
+            &:hover {
+                animation: heart .6s ease forwards;
             }
     }
     .icon-heart__full {
         opacity: 0;
-            &:active {
-                animation: heart__full .5s ease forwards;
+            &:hover {
+                animation: heart__full .6s ease forwards;
             }
     }
 }
@@ -123,24 +128,31 @@ body {
 
 
 
-
 // Pickings check (coche) 
 
 .menus__bloc__btn {
-   // &:active {    width: 80%;     border-radius: 15px 0 0 15px;   // transition: ease-in-out 5s; // ! neutralise le border-radius ! // &:active fonctionne mais dans _menus.scss
+    width: 100%;
+    transition: width 1s; 
+
+    &:hover { // A faire : hover sur .box-check également
+        width: 80%; 
+        border-radius: 15px 0 0 15px;
+
+        .check {
+            transform: rotate(360deg); 
+            transition: transform 1s;
+        }
+    }
 }
 
 .box-check {    
-}
+    &:hover ~ .menus__bloc__btn {
+        width: 80%; 
+        border-radius: 15px 0 0 15px;
 
-.check {
-    
-}
-
-@keyframes menus__bloc__btn { // fait apparaitre la box-check
-
-}
-
-@keyframes check { // rotation du check
-
+        .check {
+            transform: rotate(360deg); 
+            transition: transform 1s;
+        }
+    }
 }
