@@ -37,6 +37,9 @@
     @include flex-center(center);
     width: 50%;
     margin: 0 0 20% 0; 
+    @media (min-width: 375px) {
+        width: 185px;
+    }
 }
 
 // Buttons de la partie Fonctionnement 
@@ -48,16 +51,16 @@
     width: 90%;
     height: 72px;
     background-color: $bg-main;
-    margin: 4% 0;
+    margin: 0 0 22px 0;
     &:hover {
         background-color: $color-primary-lightest;
         @include box-shadow($shadow-mid-light);  
     }
-    @media (min-width: 374px) {
+    @media (min-width: 375px) {
         width: 330px;
     }
-    @media (min-width: 1100px) {
-        margin: 0 2%;
+    @media (min-width: 1429px) {
+        margin: 0 22px;
     }
 
     

@@ -1,5 +1,8 @@
 // Menus
 
+.main-menus {
+}
+
 .menus__img img {
     height: 250px;
     width: 100%;
@@ -20,9 +23,8 @@
     width: 92%;
     background-color: $bg-main;
     padding: 0 4%;
+    max-width: 450px; // responsive
 }
-
-
 
 .menus__bloc {
     position: relative;
