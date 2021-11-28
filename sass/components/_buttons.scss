@@ -28,6 +28,9 @@
 
 .btn__nav {
     width: 65%;
+    @media (min-width: 375px) {
+        width: 225px;
+    }
 }
 
 .btn__order {
@@ -50,6 +53,13 @@
         background-color: $color-primary-lightest;
         @include box-shadow($shadow-mid-light);  
     }
+    @media (min-width: 374px) {
+        width: 330px;
+    }
+    @media (min-width: 1100px) {
+        margin: 0 2%;
+    }
+
     
     .btn__funct__number {
         @include flex-center(center); 

@@ -7,7 +7,7 @@
     opacity: 0;
     position: relative;
     z-index: 1; 
-    animation: bloc-page-index 0.3s linear forwards 2.2s; // animation-name: bloc-page-index; animation-duration; linear (par défaut "ease"), ou cubic-bezier (,,,); forwards pour étendre la valeur finale; delay; 
+    animation: bloc-page-index 0.3s linear forwards 2s; // animation-name: bloc-page-index; animation-duration; linear (par défaut "ease"), ou cubic-bezier (,,,); forwards pour étendre la valeur finale; delay; 
 }
 
 body {
@@ -15,18 +15,16 @@ body {
 
     .loader__container {
         position: absolute;
-        width: 100vh 100vh;
+        width: 10vh;
+        height: 10vh;
         top: 50vh;
         left: calc(50% - 2em);
-
-        background-color: solid black; // j'aimerais un disque (assiette), ne fonctionne pas 
-        border-radius: 50px;
-        z-index: 3;
+        z-index: 0;
 
         .loader {
-            z-index: 4; 
+            z-index: 0; 
             opacity: 1;
-            animation: loader 2.3s linear forwards .2s;
+            animation: loader 2s linear forwards .2s;
             background: linear-gradient(
                 to top left, 
                 $color-primary-lighter, $color-secondary-lighter, 
@@ -74,6 +72,10 @@ body {
     .pickings3 {
         opacity: 0;
         animation: anim 1s linear forwards 0.8s;
+    }
+    .box-check {
+        opacity: 0;
+        animation: anim 1s linear forwards 1.5s;
     }
 }
 

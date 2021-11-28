@@ -4,12 +4,27 @@
     margin: 0;
     padding: 10% 0 0 6%;
     background-color: $bg-main;
+        @media (min-width: 600px) {
+            padding-left: 0;
+        }
 
     h2 { 
+        @media (min-width: 375px) {
+            @include flex-center(center); 
+            padding-right: 0;
+            }
     }
     .restau__bloc {
         @include flex(flex-start, column);
         padding-bottom: 15%; 
+
+        @media (min-width: 600px) {
+            @include flex(center, row);     
+            flex-wrap: wrap;
+            .restau__bloc__cards {
+                max-width: 530px;
+            }
+        }
     }
 
 }
@@ -30,7 +45,16 @@
         bottom: 0;
         left: 0; 
     }
-    
+    @media (min-width: 600px) {
+        margin: 0 2% 5% 2%;
+    }
+    @media (min-width: 800px) {
+        margin: 0 6% 5% 6%;
+    }
+    @media (min-width: 1000px) {
+        margin: 0 7% 5% 7%;
+    }
+
     .restau__bloc__cards__img {
  
         img {

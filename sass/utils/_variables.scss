@@ -1,6 +1,5 @@
 // Variables
 
-
 // Colors
 $color-primary: #9356DC; 
 $color-secondary: #FF79DA; 
@@ -13,23 +12,19 @@ $color-secondary-lighter: lighten($color-secondary, 7%);
 
 $color-tertiary-darker: darken($color-tertiary, 40%); 
 
-
 // Back-ground colors 
 $bg-search: #ededed; 
 $bg-main: #f7f7f7; 
 $bg-restau-cards-btn: white; 
 $bg-footer: #353535;
 
-
 // Text colors 
 $text-light: dimgrey; 
 $text-extra-light: #ededed; 
 
-
 // Font Variables
 $roboto: 'Roboto', sans-serif;  
 $Shrikhand: 'Shrikhand', cursive;  
-
 
 // Shadows
 $shadow-darker: 0px 2px 8px rgb(68, 68, 68); 
