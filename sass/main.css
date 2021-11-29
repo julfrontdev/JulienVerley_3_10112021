@@ -448,7 +448,7 @@ form .form__search {
           flex-direction: row;
   background-color: #ededed;
   width: 100%;
-  padding: 15px 0;
+  padding: 15px 0 15px 0;
   -webkit-box-shadow: 0px -2px 2px lightgrey;
           box-shadow: 0px -2px 2px lightgrey;
 }
@@ -492,6 +492,7 @@ form .form__search .form__search__map-icon {
 form .form__search .form__search__text {
   background-color: #ededed;
   font-size: 0.9rem;
+  width: 125px;
 }
 
 .presentation {
