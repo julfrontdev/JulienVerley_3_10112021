@@ -2,7 +2,7 @@
 
 footer {
     @include flex(flex-start, column); 
-    padding: 5% 10% 10% 6%;
+    padding: 25px 10% 25px 6%;
     background-color: $bg-footer;
     color: $text-extra-light;
     bottom: 0;
@@ -10,10 +10,12 @@ footer {
     ul {
         width: 100%;
         padding: 0;
+        
         li {
             width: 100%;
-            margin: 2% 0 3% 0; 
+            margin: 15px 0 15px 0; 
             display: flex;
+        
             .footer-icons {
                 width: 20px;
                 margin-right: 5px;
