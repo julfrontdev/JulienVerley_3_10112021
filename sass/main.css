@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 html, body, #bloc-page {
   width: 100%;
   margin: 0;

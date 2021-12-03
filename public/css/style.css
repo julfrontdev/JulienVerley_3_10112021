@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 html, body, #bloc-page {
   width: 100%;
   margin: 0;
@@ -103,7 +103,7 @@ p {
 }
 .btn__funct:hover {
   background-color: #f4eefc;
-  box-shadow: #aaa9a9;
+  box-shadow: 0px 2px 8px #CDCDCD;
 }
 @media (min-width: 375px) {
   .btn__funct {
@@ -241,7 +241,7 @@ header .header__container .icon-arrow > a {
   margin: 0 0 2% 0;
 }
 .menus__bloc .menus__bloc__btn {
-  box-shadow: #aaa9a9;
+  box-shadow: 0px 2px 8px #CDCDCD;
   display: flex;
   position: relative;
   z-index: 2;
