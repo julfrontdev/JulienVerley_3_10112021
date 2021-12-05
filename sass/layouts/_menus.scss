@@ -85,7 +85,7 @@
     }
 
     .menus__bloc__btn {
-        @include box-shadow($shadow-mid-light);          
+        @include box-shadow($shadow-light);          
         display: flex;
         position: relative;
         z-index: 2; 
