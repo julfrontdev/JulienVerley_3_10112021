@@ -26,14 +26,14 @@
     }    
 }
 
-.btn__nav {
+.btn__nav { // "Explorer nos restaurants"
     width: 65%;
     @media (min-width: 375px) {
         width: 225px;
     }
 }
 
-.btn__order {
+.btn__order { // "Commander"
     @include flex-center(center);
     width: 50%;
     margin: 0 0 70px 0; 
@@ -41,6 +41,7 @@
         width: 185px;
     }
 }
+
 
 // Buttons de la partie Fonctionnement  
 

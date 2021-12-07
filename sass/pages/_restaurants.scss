@@ -10,13 +10,13 @@
 
     h2 { 
         margin: 0 0 28px 0;
-        @media (min-width: 375px) {
+        @media (min-width: 376px) {
             @include flex-center(center); 
             padding-right: 0;
             }
     }
 
-    .restau__bloc {
+    .restau__bloc { // toutes les cartes
         @include flex(flex-start, column);
         padding-bottom: 15px; 
 
@@ -30,12 +30,11 @@
         }
         @media (min-width: 1100px) {
             padding-left: 0;
-            // problème  max-width: 1100px; 
         }
     }
 }
 
-.restau__bloc__cards {
+.restau__bloc__cards { // cartes individuelles
     @include box-shadow($shadow-light);  
     height: 250px; 
     width: 94%;
@@ -43,6 +42,7 @@
     border-radius: 10px;
     background-color: $bg-restau-cards-btn;
     position: relative; // cartes cliquables
+    
     > a { // cartes cliquables
         z-index: 2; // partie cliquable au dessus de .nouveau
         position: absolute;

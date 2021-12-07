@@ -1,8 +1,5 @@
 // Menus
 
-.main-menus {
-}
-
 .menus__img img {
     height: 250px;
     width: 100%;
@@ -44,7 +41,7 @@
         border-radius: 0 15px 15px 0;     
     }    
 
-    .menus__bloc__title-icon {
+    .menus__bloc__title-icon { // titre et coeur
         @include flex-space (space-between, row); 
         position: relative;
         
@@ -56,7 +53,7 @@
         .icon-heart__full { // coeur plein
             position: absolute;
             top: 30px; 
-            right: 10px; // overflow: hidden, pas utilisé
+            right: 10px; 
             background: linear-gradient(to bottom left, $color-primary, $color-secondary); // dégradé sur le background
             -webkit-background-clip: text; // background apparait sur le texte uniquement
             -webkit-text-fill-color: transparent; // text transparent
@@ -103,7 +100,6 @@
             h3 { // title
                 padding: 0 0 0 0 ;
                 margin: 0 0 10px 0;
-
                 white-space: nowrap; // ... 
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -113,7 +109,6 @@
                 padding: 0 0 0 0;
                 margin: 0 0 0 0;
                 color: $text-light; 
-
                 white-space: nowrap; // ... 
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -126,10 +121,9 @@
                 color: $color-tertiary; 
                 border-radius: 50px;
                 background-color: #ffff;    
-                right: -16%; // A revoir ? 
-                bottom: 23px; // hauteur à revoir ?
+                right: -16%; 
+                bottom: 23px;
             }
-            
         }
 
         .menus__bloc__btn__price {
@@ -142,3 +136,4 @@
         }   
     }
 }
+

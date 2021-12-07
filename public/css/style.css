@@ -445,7 +445,7 @@ nav p {
 .restaurants h2 {
   margin: 0 0 28px 0;
 }
-@media (min-width: 375px) {
+@media (min-width: 376px) {
   .restaurants h2 {
     display: flex;
     align-items: center;
@@ -579,7 +579,7 @@ nav p {
   opacity: 0;
   position: relative;
   z-index: 1;
-  animation: bloc-page-index 0.3s linear forwards 2s;
+  animation: bloc-page-index 0.2s linear forwards 1.9s;
 }
 
 body {
@@ -596,7 +596,7 @@ body .loader__container {
 body .loader__container .loader {
   z-index: 0;
   opacity: 1;
-  animation: loader 2s linear forwards 0.2s;
+  animation: loader 2s linear forwards 0s;
   background: linear-gradient(to top left, #a674e2, #ff9de4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
