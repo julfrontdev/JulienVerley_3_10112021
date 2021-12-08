@@ -103,7 +103,7 @@ p {
 }
 .btn__funct:hover {
   background-color: #f4eefc;
-  box-shadow: 0px 2px 8px #CDCDCD;
+  box-shadow: 0px 2px 8px lightgrey;
 }
 @media (min-width: 375px) {
   .btn__funct {
