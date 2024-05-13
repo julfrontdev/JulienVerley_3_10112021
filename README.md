@@ -17,7 +17,7 @@ Julien Verley
 
 ### Visit on GitHub pages
 
-https://julienverley.github.io/JulienVerley_3_10112021/index.html
+https://julienverley.github.io/ohmyfood/index.html
 
 ### Install on your computer
 
